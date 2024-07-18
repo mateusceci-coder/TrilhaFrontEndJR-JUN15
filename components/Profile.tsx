@@ -1,25 +1,55 @@
+"use client";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Profile = () => {
   return (
-    <section className="font-kanit flex px-12 py-16 h-screen relative" id="profile">
-      <div className="flex flex-col absolute gap-12 px-6 mt-24">
-        <p className="text-6xl md:text-8xl text-center md:text-start">Olá,</p>
-        <p className="text-6xl md:text-8xl md:relative left-16 text-center md:text-start">
-          eu sou Mateus,
-        </p>
-        <p className="text-6xl md:text-8xl md:relative left-32 md:whitespace-nowrap text-center md:text-start">
-          desenvolvedor frontend.
-        </p>
-        <Image
-          src="/perfil.png"
-          alt="Profile"
-          className="w-60 h-60 rounded-full md:absolute top-16 left-[90%] mx-auto transform md:-translate-x-1/2 md:-translate-y-1/2"
-          width={192}
-          height={192}
-        />
-      </div>
-    </section>
+    <AnimatePresence>
+      <section
+        className="font-kanit flex justify-center md:py-16 min-h-screen "
+        id="profile"
+      >
+        <div className="flex flex-col absolute gap-12 mt-16">
+          <motion.p
+            className="text-4xl text-center lg:text-6xl 2xl:text-7xl md:text-start relative xl:right-12 2xl:right-12"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 1.0 }}
+          >
+            Olá,
+          </motion.p>
+          <motion.p
+            className="text-4xl text-center lg:text-6xl relative xl:left-12 2xl:text-7xl 2xl:left-12 md:text-start"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.4, duration: 1.0 }}
+          >
+            eu sou <span className="text-red-primary">Mateus</span>,
+          </motion.p>
+          <motion.p
+            className="text-4xl text-center lg:text-6xl relative xl:left-48 2xl:text-7xl 2xl:left-48  md:text-start underline"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.6, duration: 1.0 }}
+          >
+            desenvolvedor frontend.
+          </motion.p>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.8, duration: 1.0 }}
+          >
+            <Image
+              src="/perfil.png"
+              alt="Profile"
+              className="w-60 h-60 rounded-full mx-auto"
+              width={192}
+              height={192}
+            />
+          </motion.div>
+        </div>
+      </section>
+    </AnimatePresence>
   );
 };
 
