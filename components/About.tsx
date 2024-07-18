@@ -23,7 +23,7 @@ const About = () => {
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
       transition={{ duration: 0.8 }}
     >
-      <h1 className="font-kanit text-5xl mb-12">Sobre</h1>
+      <h1 className="font-kanit text-5xl mb-12 text-red-primary">Sobre</h1>
       <Accordion type="single" collapsible className="w-full max-w-[1200px]">
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-xl">Nome</AccordionTrigger>

@@ -1,7 +1,7 @@
 const Motivation = () => {
   return (
     <div className="h-screen flex flex-col items-center p-4" id="motivation">
-      <h1 className="font-kanit text-5xl mb-24">Motivação</h1>
+      <h1 className="font-kanit text-5xl mb-24 text-red-primary">Motivação</h1>
       <div className="flex flex-col text-center max-w-4xl">
       <p className="text-xl mb-4 leading-9">
         Minha motivação principal para ingressar na Código Certo é a
