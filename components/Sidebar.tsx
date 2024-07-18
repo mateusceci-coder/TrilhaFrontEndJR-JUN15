@@ -1,19 +1,18 @@
 import { Sun } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { UserRoundPen, BookUser, Bike, Trophy } from 'lucide-react';
+import { UserRoundPen, BookUser, Trophy } from 'lucide-react';
 
 
 export const links = [
-  { href: "#profile", label: "Profile", icon: UserRoundPen },
-  { href: "#about", label: "About", icon: BookUser },
-  { href: "#hobbies", label: "Hobbies", icon: Bike },
-  { href: "#movitation", label: "Motivation", icon: Trophy },
+  { href: "#profile", label: "Perfil", icon: UserRoundPen },
+  { href: "#about", label: "Sobre", icon: BookUser },
+  { href: "#motivation", label: "Motivação", icon: Trophy },
 ];
 
 const Sidebar = () => {
   return (
-    <nav className="hidden fixed top-0 left-0 px-2 py-10 bg-red-500 md:grid grid-rows-[auto,1fr,auto] min-h-full w-72">
+    <nav className="hidden fixed top-0 left-0 px-2 py-10 bg-red-primary md:grid grid-rows-[auto,1fr,auto] min-h-full w-64">
       <div className="flex justify-center">
       <Sun size={32} />
       </div>
