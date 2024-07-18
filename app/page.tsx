@@ -1,5 +1,4 @@
 import About from "@/components/About";
-import Hobbies from "@/components/Hobbies";
 import Motivation from "@/components/Motivation";
 import Profile from "@/components/Profile";
 import Sidebar from "@/components/Sidebar";
@@ -10,10 +9,9 @@ export default function Home() {
     <main>
       <Sidebar />
       <Topnav />
-      <div className="md:ml-72">
+      <div className="md:ml-64">
         <Profile />
         <About />
-        <Hobbies />
         <Motivation />
       </div>
     </main>
