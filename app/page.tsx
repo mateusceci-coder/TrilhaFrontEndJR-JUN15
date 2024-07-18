@@ -1,25 +1,21 @@
-import Navbar from "@/components/Navbar";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import About from "@/components/About";
+import Hobbies from "@/components/Hobbies";
+import Motivation from "@/components/Motivation";
+import Profile from "@/components/Profile";
+import Sidebar from "@/components/Sidebar";
+import Topnav from "@/components/Topnav";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex justify-center items-center">
-      <Navbar />
-      <Carousel className="w-full max-w-[1200px]">
-        <CarouselContent>
-          <CarouselItem>...</CarouselItem>
-          <CarouselItem>...</CarouselItem>
-          <CarouselItem>...</CarouselItem>
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+    <main>
+      <Sidebar />
+      <Topnav />
+      <div className="md:ml-72">
+        <Profile />
+        <About />
+        <Hobbies />
+        <Motivation />
+      </div>
     </main>
   );
 }
