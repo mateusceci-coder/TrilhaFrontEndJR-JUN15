@@ -18,7 +18,7 @@ const Topnav = () => {
      <Menubar>
   <MenubarMenu>
     <MenubarTrigger><Menu /></MenubarTrigger>
-    <MenubarContent className="bg-red-500">
+    <MenubarContent className="bg-red-primary">
       {links.map(({ href, label, icon: Icon }) => (
         <Link href={href} key={`${label}`}>
           <MenubarItem className="text-lg flex gap-2">{label} <Icon size={16} /></MenubarItem>
