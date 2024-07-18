@@ -22,6 +22,7 @@ const config = {
         kanit: ["Kanit", "sans-serif"],
       },
       colors: {
+        "red-primary": "#e53939",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
