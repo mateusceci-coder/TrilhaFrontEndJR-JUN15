@@ -1,7 +1,7 @@
-import { Sun } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { UserRoundPen, BookUser, Trophy } from 'lucide-react';
+import ToggleTheme from "./ToggleTheme";
 
 
 export const links = [
@@ -14,7 +14,7 @@ const Sidebar = () => {
   return (
     <nav className="hidden fixed top-0 left-0 px-2 py-10 bg-red-primary md:grid grid-rows-[auto,1fr,auto] min-h-full w-64">
       <div className="flex justify-center">
-      <Sun size={32} />
+      <ToggleTheme />
       </div>
       <div>
         <ul className="flex flex-col gap-1 mt-24">
