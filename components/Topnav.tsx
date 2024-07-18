@@ -4,8 +4,6 @@ import {
   MenubarContent,
   MenubarItem,
   MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import { links } from "./Sidebar";
@@ -30,27 +28,33 @@ const Topnav = () => {
               </Link>
             ))}
             <MenubarItem className="flex gap-2">
-              <Image
-                src="/linkedin.png"
-                alt="linkedin"
-                width={40}
-                height={40}
-                className="w-8 h-8"
-              />
-              <Image
-                src="/github.png"
-                alt="linkedin"
-                width={40}
-                height={40}
-                className="w-8 h-8"
-              />
-              <Image
-                src="/whatsapp.png"
-                alt="linkedin"
-                width={40}
-                height={40}
-                className="w-8 h-8"
-              />
+              <Link href="https://www.linkedin.com/in/mateusceci-coder/">
+                <Image
+                  src="/linkedin.png"
+                  alt="linkedin"
+                  width={40}
+                  height={40}
+                  className="w-8 h-8"
+                />
+              </Link>
+              <Link href="https://github.com/mateusceci-coder">
+                <Image
+                  src="/github.png"
+                  alt="linkedin"
+                  width={40}
+                  height={40}
+                  className="w-8 h-8"
+                />
+              </Link>
+              <Link href="https://wa.me/5548991820135">
+                <Image
+                  src="/whatsapp.png"
+                  alt="linkedin"
+                  width={40}
+                  height={40}
+                  className="w-8 h-8"
+                />
+              </Link>
             </MenubarItem>
           </MenubarContent>
         </MenubarMenu>
