@@ -6,7 +6,7 @@ const Profile = () => {
   return (
     <AnimatePresence>
       <section
-        className="font-kanit flex justify-center md:py-16 min-h-screen "
+        className="font-kanit flex justify-center md:py-16 min-h-screen p-2"
         id="profile"
       >
         <div className="flex flex-col absolute gap-12 mt-16">
