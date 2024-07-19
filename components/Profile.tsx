@@ -32,7 +32,7 @@ const Profile = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.6, duration: 1.0 }}
           >
-            desenvolvedor frontend.
+            desenvolvedor front-end.
           </motion.p>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
